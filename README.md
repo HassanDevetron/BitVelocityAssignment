@@ -1,2 +1,0 @@
-# BitVelocityAssignment
-BitVelocityAssignment
