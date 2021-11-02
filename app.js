@@ -25,3 +25,5 @@ app.use(function(err,req,res,next){
 app.listen(process.env.port || 4000, function(){
     console.log('Ready to Go! running on port 4000');
 });
+
+module.exports = app;
