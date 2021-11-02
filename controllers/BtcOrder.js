@@ -48,3 +48,9 @@ module.exports.displayBtc = async(req, res) => {
 };
 
 
+// can be used but i am a little unclear about the scenario present in the doc
+const isValidPrice = (sellPrice, avgPrice) => {
+    const aboveAvgPrice = avgPrice + avgPrice * 0.05;
+    const belowAvgPrice = avgPrice - avgPrice * 0.05;
+    return sellPrice > belowAvgPrice || sellPrice < aboveAvgPrice ? true : false
+}
